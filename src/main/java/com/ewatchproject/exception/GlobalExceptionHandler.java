@@ -14,6 +14,11 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler{
 		return new ResponseEntity<String>(ex.getMessage(), HttpStatus.CONFLICT);
 
 	}
+	@ExceptionHandler(InvalidSubscriptionException.class)
+	public ResponseEntity<String> handleSubscriptionException(InvalidSubscriptionException e){
+		return new ResponseEntity<String>(e.getMessage(),HttpStatus.CONFLICT);
+	}
+
 }
 
 

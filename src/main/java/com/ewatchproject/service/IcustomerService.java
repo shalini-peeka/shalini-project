@@ -11,6 +11,6 @@ public interface IcustomerService {
 	public List<Channel> viewChannel();
 	public List<Plan> viewPlans();
 	public String subscribeChannelPlan(long channelId, long planId) throws InvalidSubscriptionException;
-	public String unsubscribeChannelPlan(long channelId,long planId) throws InvalidSubscriptionException;
+	public String unsubscribeChannelPlan(long channelId,long planId) throws InvalidSubscriptionException ;
 	public List<Channel> viewSubscriptions(String UserName);
 }
